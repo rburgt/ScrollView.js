@@ -75,6 +75,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
 
     grunt.registerTask('devbuild', ['concat_sourcemap:devbuild']);
+    grunt.registerTask('test', []);
 
     return grunt.registerTask('default', ['uglify:build']);
 };
